@@ -273,7 +273,7 @@ section {
 }
 
 .header .logo h1 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
   color: #000;
   margin: 0;
@@ -287,13 +287,14 @@ section {
 
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   background: #FA6F3B;
-  padding: 8px 20px;
+  padding: 6px 15px;
   margin-left: 30px;
   border-radius: 50px;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 .header .btn-book-a-table:hover,
@@ -301,6 +302,28 @@ section {
   color: #fff;
   background: #75CBD7;
 }
+
+.navbar{
+  margin-top: 20px;
+}
+
+.mobile-nav-toggle {
+  position: relative;
+  top:8.5px;
+}
+
+@media (max-width: 480px) {
+  .header .logo h1 {
+    font-size: 30px; /* Adjust font size to make sure it fits on one line */
+    white-space: nowrap; /* Ensures text doesn't wrap to the next line */
+  }
+
+  .header .btn-book-a-table {
+    font-size: 10px; /* Smaller text in the button */
+    padding: 5px 10px; /* Smaller padding to reduce overall button size */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -587,24 +610,24 @@ section {
 }
 
 .about .call-us {
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
+  left: 20%;
+  right: 20%;
+  bottom: 3%;
   background-color: #fff;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
-  padding: 20px;
+  padding: 10px 1px 1px;
   text-align: center;
 }
 
 .about .call-us h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   font-family: var(--font-default);
 }
 
 .about .call-us p {
-  font-size: 28px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -1761,6 +1784,27 @@ section {
     font-size: 10px; /* Smaller font size for buttons */
     margin-left: -100px;
     margin-top: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero{
+    height: 500px;
+  }
+  .hero h2{
+    font-size: 35px;
+  }
+  .col-lg-5.order-1 {
+    display: flex;
+    justify-content: start; /* Aligns content to the left */
+    align-items: end; /* Aligns content to the bottom */
+    height: 100%; /* Ensures the column takes full height of the row */
+  }
+
+  .col-lg-5.order-1 img {
+    width: auto;  /* Maintains the image's aspect ratio */
+    max-width: 100%; /* Ensures the image does not overflow its container's width */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
   }
 }
 /*--------------------------------------------------------------
