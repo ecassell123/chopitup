@@ -1789,23 +1789,40 @@ section {
 
 @media (max-width: 480px) {
   .hero{
-    height: 500px;
+    height: 700px;
+    padding-bottom: 30px;
   }
   .hero h2{
-    font-size: 35px;
+    font-size: 55px;
   }
+
+  .hero p {
+    font-size: 16px; /* Smaller font size for paragraphs on small screens */
+    margin-bottom: 20px; /* Adjusted margin for layout */
+    text-align: left;
+  }
+
+  .hero .btn-book-a-table {
+    padding: 7px 9px; /* Slightly smaller padding */
+    font-size: 12px; /* Smaller font size for buttons */
+    margin-left: -100px;
+    margin-top: -5px;
+  }
+
   .col-lg-5.order-1 {
     display: flex;
     justify-content: start; /* Aligns content to the left */
-    align-items: end; /* Aligns content to the bottom */
+    align-items: center; /* Aligns content to the bottom */
     height: 100%; /* Ensures the column takes full height of the row */
   }
 
   .col-lg-5.order-1 img {
-    width: auto;  /* Maintains the image's aspect ratio */
-    max-width: 100%; /* Ensures the image does not overflow its container's width */
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    margin-top: 80%;
+    width: auto;  
+    max-width: 100%; 
+    height: auto; 
   }
+
 }
 /*--------------------------------------------------------------
 # Footer
