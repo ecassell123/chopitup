@@ -243,7 +243,7 @@ Usage: codyhouse.co/license
     top: 0;
     height: var(--header-height);
     background: inherit;
-    border-bottom: 1px solid hsl(var(--mf1-color-contrast-lower-hsl));
+    margin-top: 10px;
   }
   
   .header__nav--is-visible {
