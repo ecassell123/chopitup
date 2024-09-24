@@ -268,19 +268,35 @@ section {
   border-color: #eee;
 }
 
+
 .header .logo img {
-  max-height: 70px;
-  margin-right: 4px;
+    max-height: 75px; /* Increase this value to scale up */
+    max-width: auto;   /* Ensure the width scales proportionally */
+    width: auto;       /* Ensure the width scales naturally */
+    height: auto;      /* Let height scale automatically if max-height is not enough */
+    margin-right: 10px;
+    margin-top: -20px;
+  }
+
+
+@font-face {
+  font-family: 'TAN Nimbus';
+  src: url('../fonts/TANimbus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+
+
 .header .logo h1 {
-  font-size: 35px;
-  font-weight: 700;
-  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fa6f3b;
   margin: 0;
-  margin-top: 20px;
-  font-family: var(--font-secondary);
+  margin-top: 0px;
+  font-family: 'TAN Nimbus', sans-serif;
 }
+
 
 .header .logo h1 span {
   color: #446FC9;
@@ -304,9 +320,6 @@ section {
   background: #75CBD7;
 }
 
-.navbar{
-  margin-top: 20px;
-}
 
 .mobile-nav-toggle {
   position: relative;
@@ -1776,6 +1789,7 @@ section {
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
   .hero {
+    margin-top: -100px;
     margin-bottom: 0;
     padding-bottom: 0;
     display: block;
