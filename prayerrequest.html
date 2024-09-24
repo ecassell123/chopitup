@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Request</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #f6f3e2;">
+
+  <div class="container mt-5">
+    <!-- Back Arrow --> 
+    <div class="mb-4">
+      <a href="faith.html" class="back-arrow">
+        <img src="https://img.icons8.com/material-rounded/24/000000/left.png" alt="Back Arrow" />
+      </a>
+    </div>
+
+    <h1 class="form-header text-center mb-4">Prayer Request Form</h1>
+    <h5 class="form-subtitle text-center mb-4">Send us your prayer requests! We would love pray for you. ✞ </h2>
+
+
+
+    <!-- Form Section -->
+    <form action="https://formspree.io/f/myzgqoer" method="POST">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+          <label for="userText">Your Prayer Request</label>
+          <textarea class="form-control" id="userText" name="userText" rows="4" placeholder="Type your message here" required></textarea>
+        </div>
+
+        <input type="hidden" name="_next" value="https://chopitupsandwiches.com/thankyou.html">
+
+        <input type="hidden" name="_subject" value="Prayer Request!!!">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
