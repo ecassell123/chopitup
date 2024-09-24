@@ -1,4 +1,6 @@
 /* Custom CSS for Faith Page */
+
+
 body {
     background-color: #1f1f24; /* Dark blue background */
     font-family: Arial, sans-serif;
@@ -10,10 +12,16 @@ body {
   
   .container_faith {
     max-width: 1200px; /* Limit container width */
-    padding: 120px 20px 20px;
+    padding: 100px 30px 30px;
     margin: 0 auto; /* Center the container */
   }
   
+  .container_learn {
+    max-width: 1200px; /* Limit container width */
+    padding: 50px 20px 20px;
+    margin: 0 auto; /* Center the container */
+  }
+
   h1 {
     font-size: 48px;
     font-weight: bold;
@@ -24,6 +32,7 @@ body {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 20px;
+    color: antiquewhite;
   }
   
   p {
@@ -33,7 +42,8 @@ body {
   }
   
   .bordered-text {
-    border: 3px solid #000000; /* Set the initial border color */
+    border: 3px solid #f8f8f8; /* Set the initial border color */
+    color: rgb(249, 249, 249);
     padding: 10px; /* Add padding to create space between the text and the border */
     border-radius: 5px; /* Optional: Adds rounded corners */
     display: inline-block; /* Ensures the border fits around the word */
@@ -53,6 +63,280 @@ body {
     line-height: 1.4; /* Optionally adjust the line height */
   }
 
+
+  /* -------------------------------- 
+
+Title: Cards
+
+-------------------------------- */
+
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.375rem; /* 22px */
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* -------------------------------- 
+
+Icons 
+
+-------------------------------- */
+
+.cd-icon {
+  --size: 1em;
+  font-size: var(--size);
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+.cd-icon use { /* SVG symbols - enable icon color corrections */
+  color: inherit;
+  fill: currentColor;
+}
+
+/* -------------------------------- 
+
+Component 
+
+-------------------------------- */
+
+.card-v14 {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f6f3e2;
+  box-shadow: 0 0 0 1px hsla(230, 13%, 9%, 0.05),
+              0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+              0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+              0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+  border-radius: 1.5em;
+  padding: 1rem;
+
+  color: inherit;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+
+.card-v14__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsla(342, 89%, 48%, 0.2);
+}
+
+.card-v14__icon {
+  --size: 24px;
+  color: #fa6f3b;
+}
+
+.card-v14__description,
+.card-v14__link {
+  font-size: 0.9375rem;
+}
+
+.card-v14__description {
+  color: hsl(225, 4%, 47%);
+  line-height: 1.58;
+  margin: 0.75rem 0 1rem;
+}
+
+.card-v14__link {
+  text-align: right;
+  margin-top: auto;
+  color: hsl(250, 84%, 54%);
+}
+
+/* -------------------------------- 
+
+Demo stuff 
+
+-------------------------------- */
+
+.demo-card-v14-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.demo-card-v14-grid > * {
+  min-width: 0;
+}
+
+@media (min-width: 42.5rem) {
+  .demo-card-v14-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 85.5rem) {
+  .demo-card-v14-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+  /* -------------------------------- 
+
+Learn
+
+-------------------------------- */
+
+
+
+/* -------------------------------- 
+
+File#: quote
+
+-------------------------------- */
+
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* -------------------------------- 
+
+Component - quote
+
+-------------------------------- */
+
+.fw-blockquote {
+  position: relative;
+  z-index: 1;
+  background-color: #f6f3e2;
+  text-align: center;
+}
+
+.fw-blockquote__icon {
+  --size: 64px;
+  color: #fa6f3b;
+}
+
+.fw-blockquote__text {
+  font-size: 1.75rem;
+  line-height: 1.58;
+  color: rgb(68, 68, 68);
+}
+
+.fw-blockquote__text em {
+  color: hsl(250, 84%, 54%);
+  font-style: italic;
+  background: linear-gradient(hsla(250, 84%, 54%, 0.075), hsla(250, 84%, 54%, 0.2));
+}
+
+.fw-blockquote__footer {
+  color: hsl(240, 4%, 65%);
+}
+
+@media (min-width: 42.5rem) {
+  .fw-blockquote__text {
+    font-size: 2.125rem;
+  }
+}
+
+/* -------------------------------- 
+
+Utilities 
+
+-------------------------------- */
+
+.cd-margin-top-lg {
+  margin-top: 3rem;
+}
+
+.cd-padding-y-2xl {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+.cd-container {
+  width: calc(100% - 3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cd-max-width-sm {
+  max-width: 48rem;
+}
 
 
   /* Add padding for smaller screens */
