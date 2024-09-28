@@ -673,6 +673,12 @@ section {
   font-family: var(--font-secondary);
 }
 
+.about .section-header p {
+  font-family: 'TAN Nimbus';
+  font-size: 40px;
+  color: #446fc9;
+}
+
 .about .call-us {
   left: 20%;
   right: 20%;
@@ -927,7 +933,7 @@ section {
 # Menu Section
 --------------------------------------------------------------*/
 .menu{
-  margin-top: -100px;
+  margin-top: -140px;
 }
 
 .menu .nav-tabs {
@@ -944,6 +950,10 @@ section {
   height: 100%;
   border: 0;
   border-bottom: 2px solid #b6b6bf;
+}
+
+.menu-item{
+  margin-top: 10px;
 }
 
 @media (max-width: 575px) {
@@ -1190,7 +1200,13 @@ section {
 # Chefs Section
 --------------------------------------------------------------*/
 .chefs{
-  margin-top: 90px;
+  margin-top: 50px;
+}
+
+.chefs .section-header p {
+  font-family: 'TAN Nimbus';
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 
@@ -1634,7 +1650,7 @@ section {
   margin-bottom: 30px;
 }
 
-.img-fluid{
+.img-hero{
   width: 100vw;
   height: 100%; /* Set desired height */
   object-fit: cover; /* Maintain aspect ratio and cover the set dimensions */
@@ -1642,8 +1658,8 @@ section {
 
 #hero .social-icons {
   position: absolute; /* Use absolute positioning to place the social icons */
-  bottom: 40px; /* Distance from the bottom of the container */
-  right: 20px; /* Distance from the right of the container */
+  bottom: 20px; /* Distance from the bottom of the container */
+  right: 10px; /* Distance from the right of the container */
   z-index: 10;
 }
 
