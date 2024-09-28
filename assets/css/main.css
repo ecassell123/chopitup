@@ -936,6 +936,10 @@ section {
   margin-top: -140px;
 }
 
+.menu-header{
+  font-family: 'TAN Nimbus';
+}
+
 .menu .nav-tabs {
   border: 0;
 }
@@ -995,14 +999,14 @@ section {
 }
 
 .menu .tab-content .tab-header p {
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   color: #676775;
   margin-bottom: 0;
 }
 
 .menu .tab-content .tab-header h3 {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 600;
   color: var(--color-primary);
 }
