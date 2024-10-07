@@ -938,6 +938,7 @@ section {
 
 .menu-header{
   font-family: 'TAN Nimbus';
+  margin-bottom: 20px;
 }
 
 .menu .nav-tabs {
@@ -1034,12 +1035,17 @@ section {
   font-family: var(--font-secondary);
   color: #8d8d9b;
   margin-bottom: 5px;
+  margin-top: -15px;
 }
 
 .menu .tab-content .menu-item .price {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #8d8d9b
+}
+
+.menu .tab-content .menu-item .item-name {
+  font-family: 'TAN Nimbus', sans-serif;
 }
 
 /*--------------------------------------------------------------
