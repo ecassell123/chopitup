@@ -1648,9 +1648,9 @@ section {
 /* Base styles that apply to all screen sizes */
 .hero{
   position: relative;
-  margin-top: -100px;
+  margin-top: -70px;
   min-height: 100vh; /* Ensure the section takes at least the full viewport height */
-  padding-bottom: 0px; /* Add padding to ensure content fits */
+  padding-bottom: 20px; /* Add padding to ensure content fits */
 }
 .hero .container {
   padding: 0; /* Add padding on the sides */
@@ -1779,7 +1779,7 @@ section {
 @media (max-width: 480px) {
   .hero {
     min-height: auto; /* Ensure dynamic height */
-    padding-bottom: 0px; /* Extra padding for very small screens */
+    padding-bottom: 20px; /* Extra padding for very small screens */
   }
 
   .hero h2 {
