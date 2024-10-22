@@ -939,9 +939,35 @@ section {
   margin-top: -110px;
 }
 
+.menu .nav-link.active {
+  color: white !important; /* Ensures the font color is white for the active tab */
+  border-color: #fa6f3b; /* Your custom border color */
+  background-color: #446fc9; /* Your custom background color */
+  padding: 10px 15px; /* Adds consistent padding inside the active tab */
+}
+
+.menu .nav-link.active h4 {
+  color: white !important; /* Ensures the <h4> element inside the active tab is white */
+}
+
+.menu .nav-link.active:hover,
+.menu .nav-link.active:focus {
+  color: white !important;
+  background-color: #446fc9; /* Ensures color stays the same on hover or focus */
+}
+
+
 .menu-header{
   font-family: 'TAN Nimbus';
   margin-bottom: 20px;
+}
+
+.sandwich-size {
+  font-size: 23px;
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 16px; /* Adjust the value as needed */
+  display: inline-block; /* Ensure margin applies */
 }
 
 .menu .nav-tabs {
@@ -949,11 +975,10 @@ section {
 }
 
 .menu .nav-link {
-  margin: 0 10px;
-  padding: 10px 5px;
+  margin: 10px 10px 10px 10px;
   transition: 0.3s;
   color: var(--color-secondary);
-  border-radius: 0;
+  border-radius: 8px; /* Rounds the corners of all tabs */
   cursor: pointer;
   height: 100%;
   border: 0;
@@ -990,23 +1015,17 @@ section {
 }
 
 .menu .nav-link:hover {
-  color: var(--color-primary);
+  color: white !important;
 }
 
 .menu .nav-link.active {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: white !important;
+  border-color: #fa6f3b;
+  background-color: #446fc9;
 }
 
 .menu .tab-content .tab-header {
   padding: 30px 0;
-}
-
-.menu .tab-content .tab-header p {
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #676775;
-  margin-bottom: 0;
 }
 
 .menu .tab-content .tab-header h3 {
@@ -1648,7 +1667,7 @@ section {
 /* Base styles that apply to all screen sizes */
 .hero{
   position: relative;
-  margin-top: -70px;
+  margin-top: -50px;
   min-height: 100vh; /* Ensure the section takes at least the full viewport height */
   padding-bottom: 20px; /* Add padding to ensure content fits */
 }
@@ -1779,7 +1798,6 @@ section {
 @media (max-width: 480px) {
   .hero {
     min-height: auto; /* Ensure dynamic height */
-    padding-bottom: 20px; /* Extra padding for very small screens */
   }
 
   .hero h2 {
