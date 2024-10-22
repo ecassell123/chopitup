@@ -1667,9 +1667,8 @@ section {
 /* Base styles that apply to all screen sizes */
 .hero{
   position: relative;
-  margin-top: -50px;
+  margin-top: -30px;
   min-height: 100vh; /* Ensure the section takes at least the full viewport height */
-  padding-bottom: 20px; /* Add padding to ensure content fits */
 }
 .hero .container {
   padding: 0; /* Add padding on the sides */
@@ -1677,7 +1676,7 @@ section {
   justify-content: center; /* Horizontally center */
   align-items: center; /* Vertically center */
   width: 100vw;; 
-  height: 80vh;
+  height: 70vh;
 }
 
 .hero h2 {
@@ -1685,7 +1684,7 @@ section {
   margin-bottom: 20px;
   color: var(--color-secondary);
   font-family: 'TAN Nimbus';
-  padding: 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .hero h2 span {
@@ -1744,7 +1743,7 @@ section {
 /* Media xl */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .hero {
-    padding: 0px 0 0 0; 
+   
   }
 
   .hero h2 {
@@ -1759,7 +1758,7 @@ section {
 /* Media l */
 @media screen and (max-width: 1024px) and (min-width: 768px){
   .hero {
-    padding: 0px 0 0px 0; /* Adjust padding for smaller and medium screens */
+ 
   }
 
   .hero .btn-book-a-table {
@@ -1779,7 +1778,7 @@ section {
 @media (max-width: 768px) {
   .hero {
     min-height: auto; /* Let the section grow as needed */
-    padding-bottom: 0px; /* Add padding for smaller screens */
+    
   }
 
   .hero h2 {
