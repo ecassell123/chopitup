@@ -645,18 +645,22 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about .about-img {
-  background-size: cover; /* or 'contain' depending on the desired effect */
-  background-position: center center; /* Centers the image within the element */
+  background-size: contain; /* Make sure the image covers the container */
+  background-position: center center; /* Center the image */
   background-repeat: no-repeat;
-  min-width: 300px; /* Set a minimum width */
-  min-height: 300px; /* Set a minimum height */
-  padding-top: 25%; /* Maintain a 4:3 aspect ratio */
+  width: 100%; /* Image container takes up full width */
+  height: 100%; /* Ensure the height scales */
+  max-height: 100%; /* Prevent the image from overflowing its container */
+  min-height: 300px; /* Minimum height for responsiveness */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  position: relative; /* Position relative for overlay content */
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .about-img {
-    width: 700px; /* Set a minimum width */
-    height: 700px; /* Set a minimum height */
-  }
+
+.about .row {
+  min-height: 500px; /* Ensure there is enough height */
+  align-items: stretch; /* Stretch both columns equally */
 }
 
 .about .container {
@@ -680,25 +684,24 @@ section {
 }
 
 .about .call-us {
-  left: 20%;
-  right: 20%;
-  bottom: 3%;
+  position: absolute; /* Absolute positioning relative to the parent container */
+  bottom: 20px; /* Position it 20px from the bottom */
+  left: 20px; /* Position it 20px from the left */
   background-color: #f6f3e2;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
-  padding: 10px 1px 1px;
-  text-align: center;
-  border: 7px solid #446fc9; /* Add a border with a default color */
+  padding: 5px 5px; /* Add padding for some spacing */
+  text-align: left; /* Ensure text aligns to the left */
+  border: 3px solid #446fc9; /* Add a border */
 }
 
 .about .call-us h4 {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 700;
   margin-bottom: 0px;
   font-family: var(--font-default);
 }
 
 .about .call-us p {
-  font-size: 15px;
+  font-size: 8px;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -933,7 +936,7 @@ section {
 # Menu Section
 --------------------------------------------------------------*/
 .menu{
-  margin-top: -140px;
+  margin-top: -110px;
 }
 
 .menu-header{
@@ -1442,6 +1445,21 @@ section {
 --------------------------------------------------------------*/
 .gallery {
   overflow: hidden;
+  background-color: #ffde59; /* Dark blue background applied to the whole gallery section */
+  padding-top: 20px; /* Add padding to give some space at the top */
+  padding-bottom: 20px; /* Add padding to give some space at the bottom */
+}
+
+.gallery .container {
+  padding-top: 20px;
+}
+
+.gallery p {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+  font-family: 'TAN Nimbus';
+  padding: 10px 10px;
 }
 
 .gallery .swiper-pagination {
@@ -1450,8 +1468,9 @@ section {
 }
 
 .gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  margin-top: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #d1d1d7;
   opacity: 1;
 }
@@ -1628,33 +1647,40 @@ section {
 --------------------------------------------------------------*/
 /* Base styles that apply to all screen sizes */
 .hero{
-  margin-top: -40px;
-  
+  position: relative;
+  margin-top: -100px;
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  padding-bottom: 0px; /* Add padding to ensure content fits */
 }
 .hero .container {
-  padding: 0 0px; /* Add padding on the sides */
+  padding: 0; /* Add padding on the sides */
   display: flex; /* Use flexbox to easily center the content */
   justify-content: center; /* Horizontally center */
   align-items: center; /* Vertically center */
   width: 100vw;; 
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero h2 {
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 10px;
   margin-bottom: 20px;
   color: var(--color-secondary);
   font-family: 'TAN Nimbus';
+  padding: 10px 10px;
 }
 
 .hero h2 span {
+  font-size: 60px;
   color: var(--color-primary);
-  text-shadow: -1px -1px 0 #F6F3E2, 1px -1px 0 #F6F3E2, -1px 1px 0 #F6F3E2, 1px 1px 0 #F6F3E2; 
+  text-shadow: -1px -1px 0 #F6F3E2, 1px -1px 0 #F6F3E2, -1px 1px 0 #F6F3E2, 1px 1px 0 #F6F3E2;
+  margin-top: 15px;  /* Adds space above the text */
+  margin-bottom: 15px; /* Adds space below the text */
+  display: inline-block; /* Ensure the margin applies properly */
 }
 
+
 .hero p {
-  font-size: 1rem; /* Dynamic size, could be adjusted if needed */
+  font-size: .85rem; /* Dynamic size, could be adjusted if needed */
   color: #4f4f5a;
   font-weight: 400;
   margin-bottom: 30px;
@@ -1662,7 +1688,7 @@ section {
 
 .img-hero{
   width: 100vw;
-  height: 100%; /* Set desired height */
+  height: auto; /* Set desired height */
   object-fit: cover; /* Maintain aspect ratio and cover the set dimensions */
 }
 
@@ -1729,48 +1755,43 @@ section {
 
 }
 
-/* Media queries for smaller screens */
-@media screen and (max-width: 768px) {
+
+/* Smaller screen adjustments */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto; /* Let the section grow as needed */
+    padding-bottom: 0px; /* Add padding for smaller screens */
+  }
 
   .hero h2 {
     margin-top: 40px;
     font-size: 32px;
-    margin-bottom: 10px; 
-  }
-
-  .hero p {
-    font-size: 14px; /* Smaller font size for paragraphs on small screens */
-    margin-bottom: 20px; /* Adjusted margin for layout */
+    margin-bottom: 10px;
   }
 
   .hero .btn-book-a-table {
-    padding: 5px 7px; /* Slightly smaller padding */
-    font-size: 10px; /* Smaller font size for buttons */
+    padding: 5px 10px; /* Adjust button padding */
+    font-size: 12px; /* Adjust button font size */
   }
 }
 
+/* Media queries for very small screens */
 @media (max-width: 480px) {
-  .hero{
-    height: 700px;
-    padding-bottom: 30px;
-  }
-  .hero h2{
-    font-size: 40px;
-    margin-top: -40px;
-    text-align: center;
-    z-index: 1;
+  .hero {
+    min-height: auto; /* Ensure dynamic height */
+    padding-bottom: 0px; /* Extra padding for very small screens */
   }
 
-  .hero p {
-    font-size: 16px; /* Smaller font size for paragraphs on small screens */
-    margin-bottom: 20px; /* Adjusted margin for layout */
+  .hero h2 {
+    font-size: 25px;
+    margin-top: -20px;
+    text-align: center;
   }
 
   .hero .btn-book-a-table {
-    padding: 7px 9px; /* Slightly smaller padding */
-    font-size: 12px; /* Smaller font size for buttons */
+    padding: 7px 12px;
+    font-size: 14px;
   }
-
 }
 /*--------------------------------------------------------------
 # Footer
