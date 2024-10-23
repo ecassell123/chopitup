@@ -1667,7 +1667,7 @@ section {
 /* Base styles that apply to all screen sizes */
 .hero{
   position: relative;
-  margin-top: -30px;
+  margin-top: 0px;
   min-height: 100vh; /* Ensure the section takes at least the full viewport height */
 }
 .hero .container {
@@ -1734,6 +1734,7 @@ section {
   color: #f6f3e2;
   background: var(--color-primary);
   box-shadow: 0 2px 8px #446FC9;
+  margin-bottom: 50px;
 }
 
 .hero .btn-book-a-table:hover {
