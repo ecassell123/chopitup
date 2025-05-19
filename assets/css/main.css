@@ -1662,9 +1662,100 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section - SLipaway
 --------------------------------------------------------------*/
-/* Base styles that apply to all screen sizes */
+/* New Slipaway Website HERO */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.hero .body {
+  margin: 0;
+  font-family: 'TAN Nimbus';
+  min-height: 100vh;
+}
+
+.hero .flex__container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero .flex__container.flex--pikachu {
+  z-index: 2;
+}
+
+.hero .flex__item {
+  height: 100vh;
+  color: #fff;
+}
+
+.hero .flex__item--left {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  background: #f8d41f;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .flex__item--right {
+  width: 35%;
+  background: #f4ecc5;
+}
+
+.hero .flex__content {
+  margin-left: 80px;
+  width: 55%;
+}
+
+.hero .text--sub {
+  font-size: 12px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.hero .text--big {
+  font-family: 'TAN Nimbus', sans-serif;
+  font-size: 7.5em;
+  font-weight: 700;
+  line-height: 110px;
+  margin-left: -8px;
+}
+
+.hero .text--normal {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 22px;
+  margin-top: 25px;
+}
+
+.hero .text__background {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  left: 72px;
+  bottom: -60px;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 170px;
+  font-weight: 700;
+}
+
+.hero .sandwich__img {
+  position: absolute;
+  bottom: 20px;
+  right: 15%;
+  max-height: 40vw;
+}
+
+/*--------------------------------------------------------------
+# Hero Section - OLD WEBSITE
+--------------------------------------------------------------*/
+
+/* Old Website - Base styles that apply to all screen sizes */
 .hero{
   position: relative;
   margin-top: 0px;
