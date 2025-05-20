@@ -12,13 +12,24 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
+  document.addEventListener('DOMContentLoaded', function () {
+    const preloader = document.getElementById('preloader');
+    const startTime = Date.now();
+  
+    window.addEventListener('load', function () {
+      const elapsed = Date.now() - startTime;
+      const delay = Math.max(0, 2000 - elapsed); // ensure 2s minimum
+  
+      setTimeout(() => {
+        if (preloader) {
+          preloader.style.opacity = '0';
+          preloader.style.visibility = 'hidden';
+          preloader.style.transition = 'opacity 0.5s ease';
+        }
+      }, delay);
     });
-  }
-
+  });  
+  
   /**
    * Sticky header on scroll
    */
