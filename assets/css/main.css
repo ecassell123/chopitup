@@ -293,7 +293,7 @@ section {
 
 
 .header .logo h1 {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 100;
   color: #fa6f3b;
   margin: 0;
@@ -304,6 +304,30 @@ section {
 
 .header .logo h1 span {
   color: #446FC9;
+  font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+  
+  .header .logo h1 {
+    font-size: 26px;
+    margin-left: -10px;
+
+  }
+  
+  .header .logo h1 span {
+    font-size: 15px;
+  }
+
+  .header .logo img {
+    max-height: 60px; /* Increase this value to scale up */
+    max-width: auto;   /* Ensure the width scales proportionally */
+    width: auto;       /* Ensure the width scales naturally */
+    height: auto;      /* Let height scale automatically if max-height is not enough */
+    margin-right: 10px;
+    margin-left: -15px;
+    margin-top: -20px;
+  }
 }
 
 .header .btn-book-a-table,
@@ -332,7 +356,7 @@ section {
 
 @media (max-width: 480px) {
   .header .logo h1 {
-    font-size: 30px; /* Adjust font size to make sure it fits on one line */
+
     white-space: nowrap; /* Ensures text doesn't wrap to the next line */
   }
 
