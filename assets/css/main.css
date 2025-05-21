@@ -742,6 +742,10 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .about .about-img {
   background-size: contain; /* Make sure the image covers the container */
   background-position: center center; /* Center the image */
@@ -904,6 +908,50 @@ section {
     opacity: 0;
   }
 }
+
+/* Quote Card Component - About Section */
+/* From Uiverse.io by alexmaracinaru */ 
+.card {
+  width: 100%;
+  max-width: 300px;
+  background: #75cbd7;
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f3f0e0;
+  margin-bottom: 10px;
+}
+
+.quote {
+  color: #f3f0e0;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .6;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.body-text {
+  font-size: 20px;
+  font-weight: 900;
+  color: #446fc9;
+  line-height: 1.4;
+  word-wrap: break-word;
+  position: relative;
+  z-index: 1;
+}
+
 
 /*--------------------------------------------------------------
 # Why Us Section
