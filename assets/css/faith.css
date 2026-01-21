@@ -9,10 +9,35 @@ body {
     margin: 0;
     padding: 0;
   }
+
+ .header-faith {
+  background: #f6f3e2;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 90px;
+  border-bottom: 1px solid #446fc9;
+}
+
+
+.header-faith.sticked {
+  border-color: #f6f3e2;
+  border-color: #eee;
+}
+
+
+
+.header-font {
+  font-family: 'TAN Nimbus', sans-serif;
+  color: #fa6f3b;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
   
   .container_faith {
     max-width: 1200px; /* Limit container width */
-    padding: 100px 30px 30px;
+    padding: 20px 30px 30px;
     margin: 0 auto; /* Center the container */
   }
   
