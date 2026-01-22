@@ -24,7 +24,7 @@
 
 
     <!-- Form Section -->
-    <form action="https://formspree.io/f/xdaavale" method="POST">
+    <form action="https://formspree.io/f/xdaavale?redirect=https://www.chopitupsandwiches.com/thankyou.html" method="POST" autocomplete="off">
         <div class="form-group">
           <label for="firstName">First Name</label>
           <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
@@ -34,7 +34,7 @@
           <textarea class="form-control" id="userText" name="userText" rows="4" placeholder="Type your message here" required></textarea>
         </div>
 
-        <input type="hidden" name="_next" value="https://chopitupsandwiches.com/thankyou.html">
+        <input type="hidden" name="_next" value="https://www.chopitupsandwiches.com/thankyou.html">
 
         <input type="hidden" name="_subject" value="Prayer Request!!!">
         <button type="submit" class="btn btn-primary">Submit</button>
@@ -47,5 +47,15 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    window.addEventListener('pageshow', function (event) {
+      if (event.persisted) {
+        var form = document.querySelector('form');
+        if (form) {
+          form.reset();
+        }
+      }
+    });
+  </script>
 </body>
 </html>
