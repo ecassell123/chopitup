@@ -4,7 +4,7 @@
 body {
     background-color: #1f1f24; /* Dark blue background */
     font-family: Arial, sans-serif;
-    color: #fff; /* White text */
+    color: #000000; /* White text */
     text-align: center; /* Center all text */
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ body {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  border-bottom: 1px solid #446fc9;
 }
 
 
@@ -89,6 +88,13 @@ body {
   }
 
 
+.row-learn {
+  margin-top: -100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+}
   /* -------------------------------- 
 
 Title: Cards
