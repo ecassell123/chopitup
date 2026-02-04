@@ -226,10 +226,10 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
     <div class="hero-wrapper">
       <div class="hero-left">
         <div class="hero-content">
-          <div class="hero-line"></div>
-          <h1 class="hero-title">STORE COMING SOON!</h1>
+           <div class="hero-line"></div>
+          <h1 class="hero-title">it's better chopped.</h1> 
           <!-- <p class="hero-description"><b>Starting in June</b></p> -->
-          <a href="#menu" class="hero-button">Menu</a>
+          <a href="#menu" class="hero-button" onclick="openDirections()">Visit us!</a>
         </div>
       </div>
       <div class="hero-image"></div>
@@ -1388,6 +1388,27 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/header.js"></script>
+
+  <script>
+  function openDirections() {
+    const googleMapsUrl =
+      "https://www.google.com/maps/dir/?api=1&destination=Chop+it+Up+Sandwiches,+1001+Palm+Ave+Suite+1,+North+Fort+Myers,+FL+33903";
+
+    const appleMapsUrl =
+      "https://maps.apple.com/?daddr=Chop+it+Up+Sandwiches,+1001+Palm+Ave+Suite+1,+North+Fort+Myers,+FL+33903&dirflg=d";
+
+    // Try Google Maps first
+    const newWindow = window.open(googleMapsUrl, "_blank");
+
+    // If blocked or fails, fall back to Apple Maps
+    setTimeout(() => {
+      if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
+        window.location.href = appleMapsUrl;
+      }
+    }, 500);
+  }
+</script>
+
 </body>
 
 </html>
