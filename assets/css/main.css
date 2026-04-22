@@ -1842,12 +1842,29 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/img/sandwiches/background.png);
-  background-size: 90%;
+  background-image: url('../img/sketch.png');
+  background-size: 38%;
   background-repeat: no-repeat;
-  background-position: 95% center;
+  background-position: 97% center;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-right: 200px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-image {
+  display: none;
 }
 
 .hero-content {
@@ -1901,7 +1918,7 @@ section {
   text-align: center;
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  width: 50%;
+  width: 60%;
   max-width: 460px;
   position: relative;
   cursor: pointer;
@@ -1937,11 +1954,19 @@ section {
   }
 }
 
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-content {
+    padding: 2rem;
+  }
+}
+
 
 @media (max-width: 575px) {
   .hero{
     height: 100px;
-
   }
 
   .hero-title {
@@ -1949,18 +1974,22 @@ section {
   }
 
   .hero::before {
-    background-size: 170%;  
+    background-size: 100%;  
     background-position: -5% center;
     left: 0; 
     right: auto; 
   }
+
+  .hero-image {
+    display: none;
+  }
+
   .hero-content {
     padding: 8.5rem;
   }
 
   .hero-title {
     font-size: 3.5rem;
-    
   }
 }
 
@@ -2350,4 +2379,56 @@ section {
 
 #news .row {
   margin-top: -40px;
+}
+
+/* -----------------------------------------------
+   Drinks Tab
+----------------------------------------------- */
+.drink-category-header {
+  font-family: 'TAN Nimbus', sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+#menu-drinks .item-name {
+  font-family: 'TAN Nimbus', sans-serif;
+}
+
+#menu-drinks .ingredients {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+#menu-drinks .menu-item {
+  padding-bottom: 1.5rem;
+}
+
+#menu-drinks .drink-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.drink-section-divider {
+  margin-top: 2rem;
+}
+
+/* -----------------------------------------------
+   Menu Download Section
+----------------------------------------------- */
+.menu-download-title {
+  font-family: 'TAN Nimbus', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-download-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 1.5rem;
 }

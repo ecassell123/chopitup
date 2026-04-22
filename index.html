@@ -75,38 +75,6 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/header.css" rel="stylesheet">
 
-  <style>
-    @font-face {
-      font-family: 'TANimbus';
-      src: url('assets/fonts/TANimbus.ttf') format('truetype');
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'PoppinsBold';
-      src: url('assets/fonts/poppins.bold.ttf') format('truetype');
-      font-display: swap;
-    }
-    /* Drink category headers — TANimbus, orange */
-    .drink-category-header {
-      font-family: 'TANimbus', sans-serif;
-      font-size: 2.2rem;
-      color: var(--color-primary);
-      margin-bottom: 0.25rem;
-    }
-    /* Drink item name — TANimbus */
-    #menu-drinks .item-name {
-      font-family: 'TANimbus', sans-serif;
-    }
-    /* Drink item description — Poppins */
-    #menu-drinks .ingredients {
-      font-family: 'PoppinsBold', sans-serif;
-      margin-top: 0.75rem;
-    }
-    /* Extra breathing room between drink title and description */
-    #menu-drinks .menu-item {
-      padding-bottom: 1.5rem;
-    }
-  </style>
 
 </head>
 
@@ -297,7 +265,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
       <div class="hero-left">
         <div class="hero-content">
            <div class="hero-line"></div>
-          <h1 class="hero-title">it's better chopped.</h1> 
+          <h1 class="hero-title">1001 Palm Avenue</h1> 
           <!-- <p class="hero-description"><b>Starting in June</b></p> -->
           <a href="#menu" class="hero-button" onclick="openDirections()">Visit us!</a>
         </div>
@@ -824,7 +792,7 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
 
               <div class="col-12">
                 <h3 class="text-center drink-category-header">Cold Brew</h3>
-                <p class="text-center" style="font-family:'PoppinsBold',sans-serif;color:#777;font-style:italic;margin-bottom:0.5rem;">coffee imported from Cuba</p>
+                <p class="text-center drink-subtitle">coffee imported from Cuba</p>
               </div>
 
               <div class="col-lg-4 menu-item">
@@ -848,9 +816,9 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
                 <p class="ingredients text-center">Vanilla, caramel, brown sugar, cinnamon</p>
               </div>
 
-              <div class="col-12" style="margin-top:2rem;">
+              <div class="col-12 drink-section-divider">
                 <h3 class="text-center drink-category-header">Refreshers</h3>
-                <p class="text-center" style="font-family:'PoppinsBold',sans-serif;color:#777;font-style:italic;margin-bottom:0.5rem;">lotus natural caffeine</p>
+                <p class="text-center drink-subtitle">lotus natural caffeine</p>
               </div>
 
               <div class="col-lg-4 menu-item">
@@ -885,8 +853,8 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
     <!-- ======= Menu Download Section ======= -->
     <section class="menu-download py-5 text-center" style="background-color:#f6f3e2;">
       <div class="container" data-aos="fade-up">
-        <h4 style="font-family:'TANimbus',sans-serif;font-size:2rem;margin-bottom:0.5rem;">Save our menus to your phone</h4>
-        <p style="font-family:'PoppinsBold',sans-serif;color:#555;margin-bottom:1.5rem;">Always know what to order — download either menu straight to your camera roll.</p>
+        <h4 class="menu-download-title">Save our menus to your phone</h4>
+        <p class="menu-download-text">Always know what to order — download either menu straight to your camera roll.</p>
         <div class="d-flex justify-content-center gap-3 flex-wrap">
           <a href="assets/img/menu.png" download="ChopItUp_FoodMenu.png" class="btn-book-a-table">
             <i class="bi bi-download" style="margin-right:8px;"></i>Download Food Menu
