@@ -5,20 +5,56 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Chop it Up Sandwiches</title>
-  <meta name="description" content="Chop It Up Sandwiches the first and only chopped sandwich spot in SWFL. We use fresh ingredients, homemade sauces, and toasted NY Italian bread that come together that form unforgettable flavor in every bite. Find us at Slipaway Food Truck Park or at events across SWFL.">
-
-  <meta content="" name="keywords">
+  <title>Chop It Up Sandwiches | North Fort Myers, FL | SWFL's Only Chopped Sandwich Shop</title>
+  <meta name="description" content="Chop It Up Sandwiches is North Fort Myers' first and only chopped sandwich shop. Fresh ingredients, homemade sauces, and toasted NY Italian bread. Visit us at 1001 Palm Ave, North Fort Myers, FL. Open Mon–Sat 10am–6pm.">
+  <meta name="keywords" content="chopped sandwiches North Fort Myers, sandwich shop Fort Myers FL, SWFL sandwiches, chopped sandwich SWFL, catering Fort Myers, Chop It Up Sandwiches">
 
   <!-- Social -->
 
-  <meta property="og:title" content="Chop it Up Sandwiches" />
-  <meta property="og:description" content="Serving chopped sandwiches throughout SWFL" />
+  <meta property="og:title" content="Chop It Up Sandwiches | North Fort Myers, FL" />
+  <meta property="og:description" content="SWFL's first and only chopped sandwich shop. Fresh ingredients, homemade sauces, toasted NY Italian bread. Visit us at 1001 Palm Ave, North Fort Myers, FL." />
+  <meta property="og:type" content="restaurant" />
   <meta property="og:url" content="https://www.chopitupsandwiches.com" />
   <meta property="og:image" content="assets/img/apple-touch-icon.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1080" />
   <meta property="og:image:height" content="1080" />
+
+  <!-- Local Business Schema — helps Google show hours, address, phone in search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Chop It Up Sandwiches",
+    "image": "https://www.chopitupsandwiches.com/assets/img/apple-touch-icon.png",
+    "url": "https://www.chopitupsandwiches.com",
+    "telephone": "+12396282775",
+    "email": "chopitupflorida@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1001 Palm Ave",
+      "addressLocality": "North Fort Myers",
+      "addressRegion": "FL",
+      "postalCode": "33903",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ],
+    "servesCuisine": "American",
+    "priceRange": "$$",
+    "description": "SWFL's first and only chopped sandwich shop. Fresh ingredients, homemade sauces, and toasted NY Italian bread.",
+    "sameAs": [
+      "https://www.instagram.com/chopitupsandwiches/",
+      "https://www.facebook.com/profile.php?id=61559036777162"
+    ]
+  }
+  </script>
 
   <!-- Favicon and Apple Touch Icon -->
   <link rel="icon" href="assets/img/favicon.png">
@@ -38,6 +74,39 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/header.css" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'TANimbus';
+      src: url('assets/fonts/TANimbus.ttf') format('truetype');
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'PoppinsBold';
+      src: url('assets/fonts/poppins.bold.ttf') format('truetype');
+      font-display: swap;
+    }
+    /* Drink category headers — TANimbus, orange */
+    .drink-category-header {
+      font-family: 'TANimbus', sans-serif;
+      font-size: 2.2rem;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+    /* Drink item name — TANimbus */
+    #menu-drinks .item-name {
+      font-family: 'TANimbus', sans-serif;
+    }
+    /* Drink item description — Poppins */
+    #menu-drinks .ingredients {
+      font-family: 'PoppinsBold', sans-serif;
+      margin-top: 0.75rem;
+    }
+    /* Extra breathing room between drink title and description */
+    #menu-drinks .menu-item {
+      padding-bottom: 1.5rem;
+    }
+  </style>
 
 </head>
 
@@ -482,543 +551,345 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
     <section id="menu" class="menu">
       <div class="container" data-aos="fade-up">
 
-         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Sandwiches</h4>
-            </a>
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters"><h4>Sandwiches</h4></a>
           </li>
-
-           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Salads</h4>
-            </a>
-
-          <!-- <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-              <h4>Chips</h4>
-            </a>
-          </li>
-
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Drinks</h4>
-            </a>
-          </li>  -->
-
-        </ul> 
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast"><h4>Salads</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-wraps"><h4>Wraps</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-sides"><h4>Sides</h4></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-drinks"><h4>Drinks</h4></a>
+          </li>
+        </ul>
 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
 
+          <!-- ======= SANDWICHES ======= -->
           <div class="tab-pane fade active show" id="menu-starters">
-
             <div class="tab-header text-center">
               <h3 class="menu-header">Sandwiches</h3>
               <p><span class="sandwich-size">half | whole</span></p>
             </div>
-
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/sandwiches/italian2.png" class="glightbox"><img src="assets/img/sandwiches/italian2.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Chicago Style Italian</h4>
-                <p class="price">
-                  MOST POPULAR
-                </p>
-                <p class="ingredients text-center">
-                  Ham, pepperoni, salami, provolone, hot peppers, lettuce, tomato, pickle, onion, oil & vinegar, italian seasoning, mayo
-                </p>
-              </div> 
+                <p class="price">MOST POPULAR</p>
+                <p class="ingredients text-center">Ham, pepperoni, salami, provolone, hot peppers, lettuce, tomato, pickle, onion, oil &amp; vinegar, italian seasoning, mayo</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/sandwiches/club.png" class="glightbox"><img src="assets/img/sandwiches/club.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">The Crunchwich</h4>
-                <p class="price">
-                  STAPLE
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, ham, bacon, sharp cheddar, tomato, lettuce, house-made pickled red onions, and our very own tangy chipotle aioli
-                </p>
-              </div> 
+                <p class="price">STAPLE</p>
+                <p class="ingredients text-center">Turkey, ham, bacon, sharp cheddar, tomato, lettuce, house-made pickled red onions, and our very own tangy chipotle aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/sandwiches/bufflo.png" class="glightbox"><img src="assets/img/sandwiches/bufflo.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4 class="item-name">Blazin’ Chicken</h4>
-                <p class="price">
-                  SPICY
-                </p>
-                <p class="ingredients text-center">
-                  Chicken, pepperoni, bacon, sharp cheddar, tomato, lettuce, banana peppers, and our homemade buffalo ranch aioli 
-                </p>
-              </div> 
+                <h4 class="item-name">Blazin' Chicken</h4>
+                <p class="price">SPICY</p>
+                <p class="ingredients text-center">Chicken, pepperoni, bacon, sharp cheddar, tomato, lettuce, banana peppers, and our homemade buffalo ranch aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/sandwiches/cranberry.png" class="glightbox"><img src="assets/img/sandwiches/cranberry.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">The Hoosier</h4>
-                <p class="price">
-                  SWEET HEAT
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, chicken, bacon, pepper jack, lettuce, tomato, house-made pickled jalapeños, and our original sweet cranberry aioli
-                </p>
-              </div> 
-
-              <!-- <div class="col-lg-4 menu-item">
-                <a href="assets/img/sandwiches/hawian.png" class="glightbox"><img src="assets/img/sandwiches/hawian.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4 class="item-name">Pineapple Paradise</h4>
-                <p class="price">
-                  9 | 17
-                </p>
-                <p class="ingredients text-center">
-                  Ham, signature bacon, swiss, pickles, our personalized tropical coleslaw
-                </p>
-              </div>  -->
+                <p class="price">SWEET HEAT</p>
+                <p class="ingredients text-center">Turkey, chicken, bacon, pepper jack, lettuce, tomato, house-made pickled jalapeños, and our original sweet cranberry aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/sandwiches/pesto.png" class="glightbox"><img src="assets/img/sandwiches/pesto.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Basil Pesto</h4>
-                <p class="price">
-                  FRESH
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, salami, real mozzarella, tomato, lettuce, and our freshly made pesto
-                </p>
-              </div> 
+                <p class="price">FRESH</p>
+                <p class="ingredients text-center">Turkey, salami, real mozzarella, tomato, lettuce, and our freshly made pesto</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">BLT</h4>
-                <p class="price">
-                  CLASSIC
-                </p>
-                <p class="ingredients text-center">
-                  Signature bacon, lettuce, tomato, mayo or choice of housemade sauce (bufflo, chipotle, pesto, cranberry)
-                </p>
-              </div> 
+                <p class="price">CLASSIC</p>
+                <p class="ingredients text-center">Signature bacon, lettuce, tomato, mayo or choice of housemade sauce (buffalo, chipotle, pesto, cranberry)</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
+                <h4 class="item-name">Mama C's Chicken Salad</h4>
+                <p class="price">HOUSE FAVORITE</p>
+                <p class="ingredients text-center">A house favorite — chicken, celery, cranberries, and homemade candied pecans, blended with a family signature dressing</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Build Your Own</h4>
-                <p class="price">
-                  CHOICE OF...
-                </p>
-                <p class="ingredients text-center">
-                  Turkey or Ham, Cheese (cheddar, pepperjack, provolone), Any Toppings (lettuce, tomato, onion, pickle, banana peppers), Any Sauce
-                </p>
-              </div>   
+                <p class="price">CHOICE OF...</p>
+                <p class="ingredients text-center">Turkey or Ham, Cheese (cheddar, pepper jack, provolone), Any Toppings (lettuce, tomato, onion, pickle, banana peppers), Any Sauce</p>
+              </div>
 
             </div>
           </div>
 
+          <!-- ======= SALADS ======= -->
           <div class="tab-pane fade" id="menu-breakfast">
-
             <div class="tab-header text-center">
               <h3 class="menu-header">Salads</h3>
               <p><span class="sandwich-size">24oz</span></p>
             </div>
-
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/salads/cran.png" class="glightbox"><img src="assets/img/salads/cran.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">The Hoosier</h4>
-                <p class="price">
-                  SWEET HEAT
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, chicken, bacon, pepper jack, lettuce, tomato, house-made pickled jalapeños, and our original sweet cranberry aioli
-                </p>
-              </div> 
-
-              <!-- <div class="col-lg-4 menu-item">
-                <a href="assets/img/salads/pine.png" class="glightbox"><img src="assets/img/salads/pine.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4 class="item-name">Pineapple Paradise</h4>
-                <p class="price">
-                  11
-                </p>
-                <p class="ingredients text-center">
-                  Pasta noodles, ham, signature bacon, swiss, pickles, our personalized tropical coleslaw
-                </p>
-              </div>  -->
-
+                <p class="price">SWEET HEAT</p>
+                <p class="ingredients text-center">Turkey, chicken, bacon, pepper jack, lettuce, tomato, house-made pickled jalapeños, and our original sweet cranberry aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/salads/italian.png" class="glightbox"><img src="assets/img/salads/italian.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Chicago Style Italian</h4>
-                <p class="price">
-                  STAPLE
-                </p>
-                <p class="ingredients text-center">
-                  Ham, pepperoni, salami, provolone, hot peppers, lettuce, tomato, pickle, onion, oil & vinegar, italian seasoning, mayo
-                </p>
-              </div> 
+                <p class="price">STAPLE</p>
+                <p class="ingredients text-center">Ham, pepperoni, salami, provolone, hot peppers, lettuce, tomato, pickle, onion, oil &amp; vinegar, italian seasoning, mayo</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/salads/pesto.png" class="glightbox"><img src="assets/img/salads/pesto.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Basil Pesto</h4>
-                <p class="price">
-                  FRESH
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, salami, real mozzarella, tomato, lettuce, and our freshly made pesto
-                </p>
-              </div> 
+                <p class="price">FRESH</p>
+                <p class="ingredients text-center">Turkey, salami, real mozzarella, tomato, lettuce, and our freshly made pesto</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/salads/bufflo.png" class="glightbox"><img src="assets/img/salads/bufflo.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4 class="item-name">Blazin’ Chicken</h4>
-                <p class="price">
-                  MOST POPULAR
-                </p>
-                <p class="ingredients text-center">
-                  Chicken, pepperoni, signature bacon, sharp cheddar, tomato, lettuce, banana peppers, and our homemade zesty buffalo ranch aioli                
-                </p>
-              </div> 
+                <h4 class="item-name">Blazin' Chicken</h4>
+                <p class="price">MOST POPULAR</p>
+                <p class="ingredients text-center">Chicken, pepperoni, signature bacon, sharp cheddar, tomato, lettuce, banana peppers, and our homemade zesty buffalo ranch aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
                 <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">The Crunchwich</h4>
-                <p class="price">
-                  GOOD FLAVOR
-                </p>
-                <p class="ingredients text-center">
-                  Turkey, ham, bacon, sharp cheddar, tomato, lettuce, house-made pickled red onions, and our very own tangy chipotle aioli
-                  </p>
-              </div> 
+                <p class="price">GOOD FLAVOR</p>
+                <p class="ingredients text-center">Turkey, ham, bacon, sharp cheddar, tomato, lettuce, house-made pickled red onions, and our very own tangy chipotle aioli</p>
+              </div>
 
-            
+              <div class="col-lg-4 menu-item">
+                <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
+                <h4 class="item-name">Mama C's Chicken Salad</h4>
+                <p class="price">HOUSE FAVORITE</p>
+                <p class="ingredients text-center">A house favorite — chicken, celery, cranberries, and homemade candied pecans, blended with a family signature dressing</p>
+              </div>
+
               <div class="col-lg-4 menu-item">
                 <a href="" class="glightbox"><img src="" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
                 <h4 class="item-name">Build Your Own</h4>
-                <p class="price">
-                  CHOICE OF...
-                </p>
-                <p class="ingredients text-center">
-                  Turkey or Ham, Cheese (cheddar, pepperjack, provolone), Any Toppings (tomato, onion, pickle, banana peppers), Any Sauce, served on a bed of lettuce
-              </div> 
-
-            </div>
-          </div>
-
-          <!-- <div class="tab-pane fade" id="menu-lunch">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Chips</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div> 
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div> 
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div> 
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div> 
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div>
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
+                <p class="price">CHOICE OF...</p>
+                <p class="ingredients text-center">Turkey or Ham, Cheese (cheddar, pepper jack, provolone), Any Toppings (tomato, onion, pickle, banana peppers), Any Sauce, served on a bed of lettuce</p>
               </div>
 
             </div>
           </div>
 
-          <div class="tab-pane fade" id="menu-dinner">
-
+          <!-- ======= WRAPS ======= -->
+          <div class="tab-pane fade" id="menu-wraps">
             <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Drinks</h3>
+              <h3 class="menu-header">Wraps</h3>
+              <p><span class="sandwich-size">flour tortilla</span></p>
             </div>
-
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div> 
+                <h4 class="item-name">Chicken Caesar Wrap</h4>
+                <p class="price">NEW</p>
+                <p class="ingredients text-center">Chicken, lettuce, homemade creamy caesar, homemade herb croutons, freshly grated parmesan cheese</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div> 
+                <h4 class="item-name">Chicago Style Italian</h4>
+                <p class="price">MOST POPULAR</p>
+                <p class="ingredients text-center">Ham, pepperoni, salami, provolone, hot peppers, lettuce, tomato, pickle, onion, oil &amp; vinegar, italian seasoning, mayo</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div> 
+                <h4 class="item-name">The Crunchwich</h4>
+                <p class="price">STAPLE</p>
+                <p class="ingredients text-center">Turkey, ham, bacon, sharp cheddar, tomato, lettuce, house-made pickled red onions, and our very own tangy chipotle aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div> 
+                <h4 class="item-name">Blazin' Chicken</h4>
+                <p class="price">SPICY</p>
+                <p class="ingredients text-center">Chicken, pepperoni, bacon, sharp cheddar, tomato, lettuce, banana peppers, and our homemade buffalo ranch aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div> 
+                <h4 class="item-name">The Hoosier</h4>
+                <p class="price">SWEET HEAT</p>
+                <p class="ingredients text-center">Turkey, chicken, bacon, pepper jack, lettuce, tomato, house-made pickled jalapeños, and our original sweet cranberry aioli</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt="" loading="lazy" decoding="async"></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients text-center">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div> 
+                <h4 class="item-name">Basil Pesto</h4>
+                <p class="price">FRESH</p>
+                <p class="ingredients text-center">Turkey, salami, real mozzarella, tomato, lettuce, and our freshly made pesto</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">BLT</h4>
+                <p class="price">CLASSIC</p>
+                <p class="ingredients text-center">Signature bacon, lettuce, tomato, mayo or choice of housemade sauce (buffalo, chipotle, pesto, cranberry)</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Mama C's Chicken Salad</h4>
+                <p class="price">HOUSE FAVORITE</p>
+                <p class="ingredients text-center">A house favorite — chicken, celery, cranberries, and homemade candied pecans, blended with a family signature dressing</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Build Your Own</h4>
+                <p class="price">CHOICE OF...</p>
+                <p class="ingredients text-center">Turkey or Ham, Cheese (cheddar, pepper jack, provolone), Any Toppings (lettuce, tomato, onion, pickle, banana peppers), Any Sauce</p>
+              </div>
 
             </div>
           </div>
 
-        </div> 
+          <!-- ======= SIDES ======= -->
+          <div class="tab-pane fade" id="menu-sides">
+            <div class="tab-header text-center">
+              <h3 class="menu-header">Sides</h3>
+              <p><span class="sandwich-size">add a side (optional)</span></p>
+            </div>
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Macaroni Salad</h4>
+                <p class="price">8oz | 12oz</p>
+                <p class="ingredients text-center">$5.99 / $8.50</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Pasta Salad</h4>
+                <p class="price">8oz | 12oz</p>
+                <p class="ingredients text-center">$7.99 / $11.99</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Mama C's Chicken Salad</h4>
+                <p class="price">8oz | 12oz</p>
+                <p class="ingredients text-center">$8.50 / $12.50</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Banana Pudding</h4>
+                <p class="price">$5.00</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Miss Vickie's Chips</h4>
+                <p class="price">$2.50</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Pickle Spear</h4>
+                <p class="price">$1.00</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ======= DRINKS ======= -->
+          <div class="tab-pane fade" id="menu-drinks">
+            <div class="tab-header text-center">
+              <h3 class="menu-header">Drinks</h3>
+              <p><span class="sandwich-size">sm $4.50 &nbsp;|&nbsp; med $5.00 &nbsp;|&nbsp; lg $5.50</span></p>
+            </div>
+            <div class="row gy-5">
+
+              <div class="col-12">
+                <h3 class="text-center drink-category-header">Cold Brew</h3>
+                <p class="text-center" style="font-family:'PoppinsBold',sans-serif;color:#777;font-style:italic;margin-bottom:0.5rem;">coffee imported from Cuba</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Cinnamon Bliss</h4>
+                <p class="price">MOST POPULAR</p>
+                <p class="ingredients text-center">Dulce de leche, vanilla, cinnamon</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Berry Mocha</h4>
+                <p class="ingredients text-center">Blackberry, dark chocolate</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Coconut Dream</h4>
+                <p class="ingredients text-center">Coconut, white chocolate</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Caramel Rush</h4>
+                <p class="ingredients text-center">Vanilla, caramel, brown sugar, cinnamon</p>
+              </div>
+
+              <div class="col-12" style="margin-top:2rem;">
+                <h3 class="text-center drink-category-header">Refreshers</h3>
+                <p class="text-center" style="font-family:'PoppinsBold',sans-serif;color:#777;font-style:italic;margin-bottom:0.5rem;">lotus natural caffeine</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Sunburst</h4>
+                <p class="price">MOST POPULAR</p>
+                <p class="ingredients text-center">Starfruit brilliance, strawberry, pineapple</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Tropical Blue</h4>
+                <p class="ingredients text-center">Blue Razz brilliance, mango, pineapple, peach</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Berry Clear</h4>
+                <p class="ingredients text-center">Glacier brilliance, strawberry, blackberry</p>
+              </div>
+
+              <div class="col-lg-4 menu-item">
+                <h4 class="item-name">Blue Coconut</h4>
+                <p class="ingredients text-center">Blue Razz brilliance, coconut, lime</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- end tab-content -->
 
       </div>
-    </section> -->
+    </section><!-- End Menu Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials" class="testimonials section-bg">
+    <!-- ======= Menu Download Section ======= -->
+    <section class="menu-download py-5 text-center" style="background-color:#f6f3e2;">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>What Are They <span>Saying About Us</span></p>
+        <h4 style="font-family:'TANimbus',sans-serif;font-size:2rem;margin-bottom:0.5rem;">Save our menus to your phone</h4>
+        <p style="font-family:'PoppinsBold',sans-serif;color:#555;margin-bottom:1.5rem;">Always know what to order — download either menu straight to your camera roll.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="assets/img/menu.png" download="ChopItUp_FoodMenu.png" class="btn-book-a-table">
+            <i class="bi bi-download" style="margin-right:8px;"></i>Download Food Menu
+          </a>
+          <a href="assets/img/drinks.png" download="ChopItUp_DrinkMenu.png" class="btn-book-a-table">
+            <i class="bi bi-download" style="margin-right:8px;"></i>Download Drink Menu
+          </a>
         </div>
-
-        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="" loading="lazy" decoding="async">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="" loading="lazy" decoding="async">
-                  </div> 
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="" loading="lazy" decoding="async">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="" loading="lazy" decoding="async">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
       </div>
-    </section> -->
-
-    <!-- ======= Events Section ======= -->
-    <!-- <section id="events" class="events">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Events</h2>
-          <p>Share <span>Your Moments</span> With our trailer</p>
-        </div>
-
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3>Custom Parties</h3>
-              <div class="price align-self-start">$99</div>
-              <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-              </p>
-            </div>
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>Private Parties</h3>
-              <div class="price align-self-start">$289</div>
-              <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
-              </p>
-            </div>
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
-              <h3>Birthday Parties</h3>
-              <div class="price align-self-start">$499</div>
-              <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
+    </section>
 
 <!--====== CLIENT LOGO PART START ======-->
 <section class="client-logo-area client-logo-one" id="client">
